@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/roulette.css">
+    <link rel="stylesheet" href="css/roulette-rotations.css">
+    <link rel="stylesheet" href="css/roulette-colors.css">
+    <title>Ruleta</title>
+</head>
+<body>
+    <main>
+        <section class="top-section">
+            <div id="win-counter">
+                <p>Premios Ganados: <span id="major-prize-count">0</span></p>
+                <p>Tokens Ganados: <span id="total-tokens-count">0</span></p>
+                <p>Intentos: <span id="remaining-spins-count">3</span></p> <!-- Contador de intentos -->
+            </div>
+        </section>
+
+        <section class="roulette-container">
+            <div id="selector"></div>
+
+            <div id="roulette">
+                <div class="roulette-section">
+                    <div class="roulette-section-container">
+                        <p>15 Tokens🪙</p>
+                    </div>
+                </div>
+                <div class="roulette-section">
+                    <div class="roulette-section-container">
+                        <p>Chacal☠️</p>
+                    </div>
+                </div>
+                <div class="roulette-section">
+                    <div class="roulette-section-container">
+                        <p>10 Tokens🪙</p>
+                    </div>
+                </div>
+                <div class="roulette-section">
+                    <div class="roulette-section-container">
+                        <p>15 Tokens🪙</p>
+                    </div>
+                </div>
+                <div class="roulette-section">
+                    <div class="roulette-section-container">
+                        <p>Chacal☠️</p>
+                    </div>
+                </div>
+                <div class="roulette-section">
+                    <div class="roulette-section-container">
+                        <p>10 Tokens🪙</p>
+                    </div>
+                </div>
+                <div class="roulette-section">
+                    <div class="roulette-section-container">
+                        <p>15 Tokens🪙</p>
+                    </div>
+                </div>
+                <div class="roulette-section">
+                    <div class="roulette-section-container">
+                        <p>Pase Elite💎</p>
+                    </div>
+                </div>
+                <div class="roulette-section">
+                    <div class="roulette-section-container">
+                        <p>10 Tokens🪙</p>
+                    </div>
+                </div>
+                <div class="roulette-section">
+                    <div class="roulette-section-container">
+                        <p>15 Tokens🪙</p>
+                    </div>
+                </div>
+                <div class="roulette-section">
+                    <div class="roulette-section-container">
+                        <p>Chacal☠️️</p>
+                    </div>
+                </div>
+                <div class="roulette-section">
+                    <div class="roulette-section-container">
+                        <p>10 Tokens🪙</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button type="button" id="spin">¡Girar!</button>
+            </div>
+        </section>
+
+        <div id="prize-announcement" class="hidden">
+            <p id="prize-text"></p>
+        </div>
+
+        <!-- Anuncio de las reglas del juego -->
+        <div id="rules-announcement" class="hidden">
+            <h2>¡Reglas del Juego!</h2>
+            <ul>
+                <li>1. ¡Si llegas a 100 tokens ganarás 100 diamantes!</li>
+                <li>2. ¡Cuidado con los chacales porque te restan tokens!</li>
+                <li>3. ¡Entre más giros a la ruleta, más chance tienes de ganar el pase!</li>
+            </ul>
+            <button id="close-rules">Cerrar</button>
+        </div>
+        
+    </main>
+    <audio id="pase-elite-sound" src="audio/BOOYAH.mp3"></audio>
+    <audio id="background-music" src="audio/sonido de ruleta.mp3" preload="auto" loop></audio>
+    <audio id="ten-tokens-sound" src="audio/subida de puntos10.mp3"></audio>
+    <audio id="fifteen-tokens-sound" src="audio/subida de puntos15.mp3"></audio>
+    <audio id="chacal-sound" src="audio/RISA DE PAYASO1.mp3"></audio>
+    <audio id="diamonds-audio" src="audio/Mario Bros.mp3"></audio>
+    <script src="js/script.js"></script>
+</body>
+</html>
